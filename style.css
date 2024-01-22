@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(78, 76, 80);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main{
+    background-color: rgb(10, 10, 10);
+    height: 550px;
+    width: 350px;
+    position: relative;
+    overflow: scroll;
+}
+
+.nav-bar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+}
+.tabs{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.tabs div{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.search, .Menu{
+    font-size: 1.5rem;
+}
+.right-bar{
+
+    height: 80%;
+    width: 15%;
+    top: 10%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0, 0.1);
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.right-bar p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.userName{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 10px;
+    width: 100%;
+    margin-left: 10px;
+
+    
+}
+.bottom-bar{
+
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.bottom-bar p{
+    font-size: 0.7rem;
+}
+.add{
+font-size: 2rem;
+margin-bottom: 0.3rem;
+}
+.video-holder{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+.video-tag{
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+.video-tag video{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
